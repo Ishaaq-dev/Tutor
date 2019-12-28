@@ -11,7 +11,7 @@ terraform init \
 
 
 if [ $BUILD == "true" ]; then
-    terraform apply -var-file="./config/pers.tfvars"
+    terraform apply -var-file="./config/pers.tfvars" -auto-approve
 elif [ $BUILD == "false" ]; then
-    terraform destroy -var-file="./config/pers.tfvars"
+    terraform destroy -var-file="./config/pers.tfvars" -auto-approve
 fi
