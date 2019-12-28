@@ -20,3 +20,7 @@ resource "aws_dynamodb_table" "available-times-dynamodb-table" {
     type = "S"
   }
 }
+
+resource "aws_sns_topic" "sms-receive-sns" {
+  name = "${var.prefix}-sms-receive-sns"
+}
