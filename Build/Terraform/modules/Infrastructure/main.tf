@@ -24,3 +24,11 @@ resource "aws_dynamodb_table" "available-times-dynamodb-table" {
 resource "aws_sns_topic" "sms-receive-sns" {
   name = "${var.prefix}-sms-receive-sns"
 }
+
+resource "aws_sqs_queue" "terraform_queue" {
+  name                      = "${var.prefix}-sms-receive-sqs"
+  delay_seconds             = 90
+  max_message_size          = 2048
+  message_retention_seconds = 86400
+  receive_wait_time_seconds = 10
+}
