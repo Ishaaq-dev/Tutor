@@ -16,6 +16,6 @@ locals {
 }
 
 module "infrastructure" {
-    source = "./modules/infrastructure"
+    source = "./modules/Infrastructure"
     prefix = local.prefix
 }
