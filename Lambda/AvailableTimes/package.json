@@ -1,0 +1,15 @@
+{
+  "name": "available_times",
+  "version": "1.0.0",
+  "description": "A Lambda that communicates with the AvailableTimes DynamoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Ishaaq-dev/Tutor.git"
+  },
+  "author": "Ishaaq Iqbal",
+  "license": "ISC"
+}
